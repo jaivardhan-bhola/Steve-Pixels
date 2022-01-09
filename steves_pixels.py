@@ -15,7 +15,7 @@ from PIL import Image, ImageFilter
 # ..\ Jaivardhan Bhola
 
 # GitHub Repo Link:
-# <link here>
+# https://github.com/jaivardhan-bhola/Steve-Pixels
 
 # This project is MIT Licensed
 # It is open-source under fair usage
