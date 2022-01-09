@@ -76,7 +76,6 @@ sound_dict = {'pause': f'{assets_folder}\\pause.mp3',
               'level_complete': f'{assets_folder}\\level.mp3',
               'theme': f'{assets_folder}\\theme.mp3'}
 
-
 ##################################################
 ##################################################
 ############# EDITABLE  PARAMETERS ###############
@@ -84,7 +83,7 @@ sound_dict = {'pause': f'{assets_folder}\\pause.mp3',
 ##################################################
 
 
-fullscreen = False
+fullscreen = True
 
 win_w = 1500
 win_h = 800
@@ -125,7 +124,6 @@ music_volume = [0.4, 0.08, 0.16]
 # max, min, levels
 if not music_during_levels:
     music_volume[2] = 0
-
 
 ##################################################
 ##################################################
@@ -266,8 +264,10 @@ def runLevel(levels, levelNum):
 
     cheat_entered = ''
 
-    alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-                 'u', 'v', 'w', 'x', 'y', 'z']
+    alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g',
+                 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+                 'o', 'p', 'q', 'r', 's', 't', 'u',
+                 'v', 'w', 'x', 'y', 'z']
 
     while True:
         playerMoveTo = None
@@ -290,28 +290,29 @@ def runLevel(levels, levelNum):
                     currentImage = 0
                     return 'solved'
 
-                if event.key == K_LEFT:
+                if event.key == K_j:
                     cameraLeft = True
-                elif event.key == K_RIGHT:
+                elif event.key == K_l:
                     cameraRight = True
-                elif event.key == K_UP:
+                elif event.key == K_i:
                     cameraUp = True
-                elif event.key == K_DOWN:
+                elif event.key == K_k:
                     cameraDown = True
 
-                elif event.key == K_a:
+
+                elif event.key == K_a or event.key == K_LEFT:
                     currentImage = 2
                     playerMoveTo = LEFT
                     mapNeedsRedraw = True
-                elif event.key == K_d:
+                elif event.key == K_d or event.key == K_RIGHT:
                     currentImage = 3
                     playerMoveTo = RIGHT
                     mapNeedsRedraw = True
-                elif event.key == K_w:
+                elif event.key == K_w or event.key == K_UP:
                     currentImage = 1
                     playerMoveTo = UP
                     mapNeedsRedraw = True
-                elif event.key == K_s:
+                elif event.key == K_s or event.key == K_DOWN:
                     currentImage = 0
                     playerMoveTo = DOWN
                     mapNeedsRedraw = True
@@ -327,13 +328,13 @@ def runLevel(levels, levelNum):
 
             elif event.type == KEYUP:
 
-                if event.key == K_LEFT:
+                if event.key == K_j:
                     cameraLeft = False
-                elif event.key == K_RIGHT:
+                elif event.key == K_l:
                     cameraRight = False
-                elif event.key == K_UP:
+                elif event.key == K_i:
                     cameraUp = False
-                elif event.key == K_DOWN:
+                elif event.key == K_k:
                     cameraDown = False
 
         if playerMoveTo is not None and not levelIsComplete:
@@ -526,7 +527,7 @@ def startScreen():
     instructionText = ['Push all the Pixel-Crystals in the portals!',
                        '',
                        'Movement: WASD/Arrow keys',
-                       'Camera control: Arrow keys',
+                       'Camera control: I-J-K-L',
                        'Exit game: Escape',
                        'Reset level: Backspace',
                        'Continue: Enter']
@@ -906,6 +907,7 @@ def isLevelFinished(levelObj, gameStateObj):
 
 
 def pause_screen():
+    
     exit_lines = [
         'PAUSE MENU',
         '',
@@ -941,12 +943,9 @@ def pause_screen():
         for event in pygame.event.get():
             if event.type == QUIT:
                 terminate()
-
             elif event.type == KEYDOWN:
-
                 if event.key == K_ESCAPE:
                     done = True
-
                 elif event.key == K_RETURN:
                     terminate()
 
@@ -959,6 +958,7 @@ def pause_screen():
 
 
 def generate_blurry():
+    
     rect = pygame.Rect(0, 0, win_w, win_h)
     sub = screen.subsurface(rect)
     screenshot = pygame.Surface((win_w, win_h))
@@ -976,6 +976,7 @@ def generate_blurry():
 
 
 def lvl_complete_blurry(img, img_rect):
+    
     rect = pygame.Rect(0, 0, win_w, win_h)
     sub = screen.subsurface(rect)
     screenshot = pygame.Surface((win_w, win_h))
