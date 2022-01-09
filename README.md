@@ -11,11 +11,17 @@
   </a>
 </p>
 
-> A fun, casual and strategic game made using Python!
+A fun, casual and strategic game made using Python!
 
 
 ## Prerequisites
 See `requirements.txt`
+
+
+## Demo video
+  
+https://user-images.githubusercontent.com/86649457/148693282-00417308-4f52-4e2a-8091-aa82e124192a.mp4
+
 
 
 ## Usage
