@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/86649457/148693282-00417308-4f52-4e2a-
 ## Usage
 
 ```sh
-python -m stevs_pixels.py
+python -m steves_pixels.py
 ```
 
 ## Authors
