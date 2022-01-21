@@ -6,8 +6,14 @@
   <a href="https://github.com/jaivardhan-bhola/Steve-Pixels#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  <a href="(https://opensource.org/licenses/BSD-3-Clause" target="_blank">
+    <img alt="License:BSD 3 Clause" src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg" />
+  </a>
+  <a href="https://twitter.com/BholaJaivardhan" target="_blank">
+    <img alt="Twitter: BholaJaivardhan" src="https://img.shields.io/twitter/follow/BholaJaivardhan.svg?style=social" />
+  </a>
+  <a href="https://twitter.com/BholaJaivardhan" target="_blank">
+    <img alt="Twitter: BholaJaivardhan" src="https://img.shields.io/twitter/follow/BholaJaivardhan.svg?style=social" />
   </a>
 </p>
 
@@ -32,13 +38,25 @@ python -m steves_pixels.py
 
 ## Authors
 
-👤 **Ishan Jindal** - [@ishanj25](https://github.com/ishanj25)
-    
-👤 **Jaivardhan Bhola** - [@jaivardhan-bhola](https://github.com/jaivardhan-bhola)
+👤 **Jaivardhan Bhola**
 
+* Twitter: [@BholaJaivardhan](https://twitter.com/BholaJaivardhan)
+* Github: [@jaivardhan-bhola](https://github.com/jaivardhan-bhola)
+* LinkedIn: [@jaivardhan-bhola-773944214](https://linkedin.com/in/jaivardhan-bhola-773944214)
+  
+👤 **Ishan Jindal**
+
+* Twitter: [@BholaJaivardhan](https://twitter.com/BholaJaivardhan)
+* Github: [@jaivardhan-bhola](https://github.com/jaivardhan-bhola)
+* LinkedIn: [@jaivardhan-bhola-773944214](https://linkedin.com/in/jaivardhan-bhola-773944214)
 
 
 ## 📝 License
 
 Copyright © 2022 [Ishan Jindal](https://github.com/ishanj25) and [Jaivardhan Bhola](https://github.com/jaivardhan-bhola).<br />
-This project is [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause) licensed.
+This project is [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause) licensed.
+  
+  
+***
+<div align = "center"><img src="https://madewithlove.now.sh/in?heart=true&colorA=%23505050&colorB=%235032b4&template=for-the-badge&text=India" alt="Made with love in India"></div>
+
