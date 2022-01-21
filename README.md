@@ -12,8 +12,8 @@
   <a href="https://twitter.com/BholaJaivardhan" target="_blank">
     <img alt="Twitter: BholaJaivardhan" src="https://img.shields.io/twitter/follow/BholaJaivardhan.svg?style=social" />
   </a>
-  <a href="https://twitter.com/BholaJaivardhan" target="_blank">
-    <img alt="Twitter: BholaJaivardhan" src="https://img.shields.io/twitter/follow/BholaJaivardhan.svg?style=social" />
+  <a href="https://twitter.com/15H4N_J" target="_blank">
+    <img alt="Twitter: 15H4N_J" src="https://img.shields.io/twitter/follow/15H4N_J.svg?style=social" />
   </a>
 </p>
 
@@ -46,9 +46,9 @@ python -m steves_pixels.py
   
 👤 **Ishan Jindal**
 
-* Twitter: [@BholaJaivardhan](https://twitter.com/BholaJaivardhan)
-* Github: [@jaivardhan-bhola](https://github.com/jaivardhan-bhola)
-* LinkedIn: [@jaivardhan-bhola-773944214](https://linkedin.com/in/jaivardhan-bhola-773944214)
+* Twitter: [@15H4N_J](https://twitter.com/15H4N_J)
+* Github: [@IshanJ25](https://github.com/IshanJ25)
+* LinkedIn: [@ishan-jindal-46ab3321a](https://www.linkedin.com/in/ishan-jindal-46ab3321a)
 
 
 ## 📝 License
