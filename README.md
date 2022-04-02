@@ -54,7 +54,7 @@ python -m steves_pixels.py
 ## 📝 License
 
 Copyright © 2022 [Ishan Jindal](https://github.com/ishanj25) and [Jaivardhan Bhola](https://github.com/jaivardhan-bhola).<br />
-This project is [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause) licensed.
+This project is [MIT](https://github.com/jaivardhan-bhola/Steve-Pixels/blob/main/LICENSE) licensed.
   
   
 ***
