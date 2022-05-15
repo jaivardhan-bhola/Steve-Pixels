@@ -897,10 +897,7 @@ def drawMap(mapObj, gameStateObj, goals):
 
 
 def isLevelFinished(levelObj, gameStateObj):
-    for goal in levelObj['goals']:
-        if goal not in gameStateObj['pixels']:
-            return False
-    return True
+    return all(not goal not in gameStateObj['pixels'] for goal in levelObj['goals'])
 
 
 def pause_screen():
