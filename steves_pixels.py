@@ -186,7 +186,6 @@ pygame.mixer.music.set_volume(music_volume[0])
 
 def main():
     global tile_mapping, grass_deco_mapping, basic_font, player_images, currentImage
-    global scale_map, tile_w, tile_h, tile_floor_height
 
     tile_w *= scale_map
     tile_h *= scale_map
