@@ -714,8 +714,6 @@ def creds():
 
         fps_clock.tick(60)
 
-    return
-
 
 def cur_func():
     cur_x, cur_y = pygame.mouse.get_pos()
@@ -952,8 +950,6 @@ def pause_screen():
 
     resume_sound.play()
     pygame.mixer.music.set_volume(music_volume[0])
-
-    return
 
 
 def generate_blurry():
