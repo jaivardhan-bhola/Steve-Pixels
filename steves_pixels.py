@@ -901,7 +901,7 @@ def isLevelFinished(levelObj, gameStateObj):
 
 
 def pause_screen():
-    
+
     exit_lines = [
         'PAUSE MENU',
         '',
@@ -950,7 +950,7 @@ def pause_screen():
 
 
 def generate_blurry():
-    
+
     rect = pygame.Rect(0, 0, win_w, win_h)
     sub = screen.subsurface(rect)
     screenshot = pygame.Surface((win_w, win_h))
@@ -968,7 +968,7 @@ def generate_blurry():
 
 
 def lvl_complete_blurry(img, img_rect):
-    
+
     rect = pygame.Rect(0, 0, win_w, win_h)
     sub = screen.subsurface(rect)
     screenshot = pygame.Surface((win_w, win_h))
