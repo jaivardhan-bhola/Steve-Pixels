@@ -426,7 +426,7 @@ def runLevel(levels, levelNum):
 def isWall(mapObj, x, y):
     if x < 0 or x >= len(mapObj) or y < 0 or y >= len(mapObj[x]):
         return False
-    elif mapObj[x][y] in ('#', 'x'):
+    if mapObj[x][y] in ('#', 'x'):
         return True
     return False
 
@@ -456,10 +456,10 @@ def isBlocked(mapObj, gameStateObj, x, y):
     if isWall(mapObj, x, y):
         return True
 
-    elif x < 0 or x >= len(mapObj) or y < 0 or y >= len(mapObj[x]):
+    if x < 0 or x >= len(mapObj) or y < 0 or y >= len(mapObj[x]):
         return True
 
-    elif (x, y) in gameStateObj['pixels']:
+    if (x, y) in gameStateObj['pixels']:
         return True
 
     return False
@@ -485,18 +485,17 @@ def makeMove(mapObj, gameStateObj, playerMoveTo):
 
     if isWall(mapObj, player_x + xOffset, player_y + yOffset):
         return False
-    else:
-        if (player_x + xOffset, player_y + yOffset) in pixels:
+    if (player_x + xOffset, player_y + yOffset) in pixels:
 
-            if not isBlocked(mapObj, gameStateObj, player_x + (xOffset * 2), player_y + (yOffset * 2)):
+        if not isBlocked(mapObj, gameStateObj, player_x + (xOffset * 2), player_y + (yOffset * 2)):
 
-                ind = pixels.index((player_x + xOffset, player_y + yOffset))
-                pixels[ind] = (pixels[ind][0] + xOffset, pixels[ind][1] + yOffset)
-            else:
-                return False
+            ind = pixels.index((player_x + xOffset, player_y + yOffset))
+            pixels[ind] = (pixels[ind][0] + xOffset, pixels[ind][1] + yOffset)
+        else:
+            return False
 
-        gameStateObj['player'] = (player_x + xOffset, player_y + yOffset)
-        return True
+    gameStateObj['player'] = (player_x + xOffset, player_y + yOffset)
+    return True
 
 
 def startScreen():
