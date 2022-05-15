@@ -299,19 +299,19 @@ def runLevel(levels, levelNum):
                     cameraDown = True
 
 
-                elif event.key == K_a or event.key == K_LEFT:
+                elif event.key in (K_a, K_LEFT):
                     currentImage = 2
                     playerMoveTo = LEFT
                     mapNeedsRedraw = True
-                elif event.key == K_d or event.key == K_RIGHT:
+                elif event.key in (K_d, K_RIGHT):
                     currentImage = 3
                     playerMoveTo = RIGHT
                     mapNeedsRedraw = True
-                elif event.key == K_w or event.key == K_UP:
+                elif event.key in (K_w, K_UP):
                     currentImage = 1
                     playerMoveTo = UP
                     mapNeedsRedraw = True
-                elif event.key == K_s or event.key == K_DOWN:
+                elif event.key in (K_s, K_DOWN):
                     currentImage = 0
                     playerMoveTo = DOWN
                     mapNeedsRedraw = True
